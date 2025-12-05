@@ -64,9 +64,40 @@ sudo systemctl status isc-dhcp-server
 dhcp.conf → Ready-to-use configuration
 screenshots/ → Full visual proof
 
+
+-----------------------------------------------
+-----------------------------------------------
+-----------------------------------------------
+-----------------------------------------------
+
+## DNS Server (BIND9) – Completed
+Caching + forwarding name server. Resolves external domains instantly using local cache and Google Public DNS as upstream.
+
+![DNS Service Running](restartandunableit.png)
+![DNS Service Check](checkit.png)
+
+**Key Features**
+- Local caching (speeds up repeated lookups)
+- Forwarders: 8.8.8.8 & 8.8.4.4
+- Allows queries from localhost + 10.0.20.0/24
+- DNSSEC validation enabled
+
+  ## Implementation Steps
+1. **Update system & install DNS Bind9 Server**
+   ```bash
+   sudo apt install Bind9 -y
+
+  ![Install DNS Server](installbind9dns.png)
+
+2.  # Specify interface
+Edited /etc/bind/named.conf.options 
+Main configuration file → /etc/bind/named.conf
+
+
+![Configuration FIle](configurenamedconf.png)
+
 Next Steps (Planned)
 
-BIND9 DNS Server (forward + reverse zone)
 Chrony NTP Server
 Apache2 + PHP Web Server
 SSH Hardening + Fail2Ban
