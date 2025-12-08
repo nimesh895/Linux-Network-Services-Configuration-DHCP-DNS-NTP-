@@ -50,6 +50,7 @@ subnet 10.0.20.0 netmask 255.255.255.0 {
 
 # Enable and start service
 sudo systemctl enable isc-dhcp-server
+
 sudo systemctl start isc-dhcp-server
 
 ![Enable](enabledhcperver.jpg)
