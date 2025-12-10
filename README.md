@@ -92,6 +92,7 @@ Caching + forwarding name server. Resolves external domains instantly using loca
 
 2.  # Specify interface
 Edited /etc/bind/named.conf.options 
+
 Main configuration file → /etc/bind/named.conf
 
 
