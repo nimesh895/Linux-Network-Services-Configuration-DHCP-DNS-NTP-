@@ -14,8 +14,11 @@ A complete, production-ready DHCP server configuration running on Kali Linux tha
 
 ## Network Design
 Kali Linux VM (DHCP Server)
+
 └── Interface: eth0
+
 ├── Static IP : 10.0.20.1/24
+
 └── Serves   : 10.0.20.10 – 10.0.20.230
 
 ## Implementation Steps
