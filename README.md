@@ -30,7 +30,9 @@ Kali Linux VM (DHCP Server)
 
 # Specify interface
 Edited /etc/default/isc-dhcp-server → INTERFACESv4="eth0"
+
 Main configuration file → /etc/dhcp/dhcpd.conf
+
 (Full working config included in this repo as dhcp.conf)
 
 ![Configuration FIle](configureiscdhcpserver.jpg)
